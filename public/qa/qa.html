@@ -1,0 +1,932 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalabel=no">
+    <title>常见问题 Q&A </title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--<meta name="format-detection" content="telephone = no" />-->
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="{{ $title }}" />
+    <meta name="msapplication-TileColor" content="#090a0a">
+    <link rel="stylesheet" href="css/css_style.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+        .ui-loader-default{
+            display:none;
+        }
+        .ui-mobile-viewport{
+            border:none;
+        }
+        .ui-page {
+            padding: 0;
+            margin: 0;
+            outline: 0
+        }
+        body{
+            letter-spacing:1.8px;
+            line-height: 1.6;
+        }
+        .prowrap{
+            position:relative;
+            max-width: 600px;
+            margin:0;
+            padding:0;
+        }
+        h4{
+            width:100px;
+            display: inline;
+            }
+        h5{
+            width:100px;
+            display: inline;
+            font-size: 13px;
+            font-weight:200;
+            color:grey;
+            padding-left:25%;
+            
+        }
+        }
+        .swipe {
+            float: left;
+            overflow: hidden;
+            visibility: hidden;
+            position: relative;
+        }
+        .swipe-wrap {
+            overflow: hidden;
+            position: relative;
+        }
+        .swipe-wrap > div {
+            float:left;
+            position: relative;
+        }
+        .pic{
+            width:90%;
+            border-radius: 6px;
+        }
+        .pic_class{
+            width:100%;
+        }
+        .pic_center{
+            text-align: center;
+            height:220px;
+            overflow:hidden;
+        }
+        .div_title{
+            background: -webkit-linear-gradient(white, #D9D9D9); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(white, #D9D9D9); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(white, #D9D9D9); /* Firefox 3.6 - 15 */
+            background: linear-gradient(white, #D9D9D9); /* 标准的语法 */
+        }
+        .div_big_box{
+            width:100%;
+            margin:0;
+            float:left;
+            border-bottom:0.6px solid #D9D9D9;
+        }
+        .div_big_box h3{
+            display: inline;
+            float: left;
+            color:#36007c;
+            margin-left:5%;
+            width:200px;
+        }
+        .div_small_box{
+            opacity: 0.95;
+            color:#979797;
+            padding-left:5%;
+            position: fixed;
+            padding-top:10px;
+            width:100%;
+            margin:0;
+            float:left;
+            transition: all 0.4s linear;
+            z-index: 100;
+            background: -webkit-linear-gradient(#f0f0f0, #E0E0E0); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(#f0f0f0, #E0E0E0); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(#f0f0f0, #E0E0E0); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#f0f0f0, #E0E0E0); /* 标准的语法 */
+        }
+        .hidden{
+            display: none;
+        }
+        .big_margin_top{
+            padding-top:115px;
+            transition: all 0.5s ease-in;
+        }
+        .middle_margin_top{
+            padding-top:65px;
+            transition: all 0.5s ease-in;
+        }
+        .middle_margin_bottom{
+            margin-bottom:75px;
+        }
+        .big_margin_bottom{
+            margin-bottom:125px;
+        }
+        .common_margin{
+            margin:3% 5% auto 5%;
+        }
+        .left{
+            margin-left:5%;
+        }
+        .right{
+            margin-right:5%;
+        }
+        .top{
+            margin-top:3%;
+        }
+        .big_top{
+            margin-top:5%;
+        }
+        .bottom{
+            margin-bottom:3%;
+        }
+        .big_bottom{
+            margin-bottom:5%;
+        }
+        .little_title h4{
+            color:#4a4a4a;
+        }
+        .detail,
+        .tips {
+            color:#9C9A9A;
+            font-size: 1.2rem;
+        }
+
+        .tips h3{
+            color: #4a4a4a;
+            font-size: 2.0rem;
+            margin-bottom:3%;
+        }
+        .div_answer li{
+            width:100%;
+            font-weight:400;
+            margin-top: 5px;
+        }
+        .disc{
+            list-style-type:disc;
+        }
+        .decimal{
+	        list-style-type:decimal;
+        }
+        .center{
+            text-align: left;
+        }
+        .black_color{
+            color:#4a4a4a;
+        }
+        .middle_text{
+            font-size: 16px;
+        }
+        .div_question_answer{
+            margin-top:30px;
+            width:79%;
+
+        }
+        .div_question{
+            font-weight: 600;
+            color:#36007C;
+        }
+        .span_lable{
+            width:20px;
+            height:20px;
+            padding: 0;
+            margin-right:5%;
+            float:left;
+        }
+        .span_lable_pic{
+            background:white url("img/icon_hide.png")  no-repeat center;
+            background-size:20px 20px;
+        }
+        .span_lable_pic_expand{
+            background:white url("img/icon_expand.png")  no-repeat center;
+            background-size:20px 20px;
+        }
+        .div_answer{
+            margin-left:12.2%;
+            width:100%;
+        }
+        .question_title{
+            font-weight: 600;
+        }
+        .div_middle_title{
+            margin-top:30px;
+            margin-left:10%;
+            font-size: 1.6rem;
+            font-weight: 300;
+            border-bottom:0.5px solid #e0e0e0;
+        }
+        .top_15{
+            margin-top:45px;
+            margin-bottom: 15px;
+       }
+       .image{
+	       width:70%;
+	       margin-top:5px;
+	       border-radius: 4px;
+	       box-shadow:0px 0px 5px #888888;
+	       }
+    </style>
+</head>
+<body>
+    <div class="prowrap">
+        <div class="div_title">
+            <div class="div_big_box" id="hot_topic">
+                <h3>热门问题</h3>
+            </div>
+            <div class="div_big_box" id="productQuestions">
+                <h3>产品问题</h3>
+            </div>
+            <div class="div_big_box" id="scenario">
+                <h3>物流、售后问题</h3>
+            </div>
+        </div>
+
+
+        <div class=" div_small_box hidden" id="div_small_title_box_1">
+            <h4>热门问题</h4>
+        </div>
+        <div class=" div_small_box hidden" id="div_small_title_box_2">
+            <h4>产品问题</h4>
+        </div>
+        <div class=" div_small_box hidden" id="div_small_title_box_3">
+            <h4>物流、售后问题</h4>
+        </div>
+        <div class="little_title left right top hidden" id="little_title_hot_topic"><h4>热门问题</h4></div>
+        <div class=" hidden detail top left" id="detail_hot_topic">
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">刚好到底能做什么？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li class="disc">
+                        管理家用：让你随时知晓家居用品的使用进度、剩余用量和库存数量。
+                    </li>
+                    <li class="disc">
+                        提醒补货：在你希望的时候（由用户设定，不主动打扰）提醒你补货。
+                    </li>
+                    <li class="disc">
+                        搜索比价：帮你在京东自营、天猫超市（自营）和一号店自营这三个渠道查找需要购买的商品并比价（多个商品比价而不只是单个商品）。
+                    </li>
+                    <li class="disc">
+                        快速购买：我们可以帮你下单购买，只要填写好收货地址，你就可以坐等收货了。
+                    </li>
+                    <li class="disc">
+                    	看一个2分18秒的视频，什么都懂了&darr;
+                    	<br></br>
+                        <video width="100%" height="240px" controls="controls" poster="">
+		<source src="./../subscribe/video/xx.mp4" type="video/mp4" >
+                    </li>
+                    
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">在刚好购买的商品是正品吗？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        是的。目前我们只在京东自营，天猫超市（自营）和一号店自营三个渠道为你购买商品，无论是商品品质还是售后服务，都是为了让你的购物更放心。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">在刚好购买的商品会贵一些吗？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        不会。我们提供实时的价格，在订单中也不收取任何额外的费用。在20分钟的比价结果有效时间内，如果你在相同购买渠道查询到的商品价格比刚好提供的低，我们会返还相应的差价金额。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">刚好可以帮我在其他平台比价和购买吗？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        目前我们的服务还不支持其他购物平台，但会在之后根据用户的需求选择扩充更多可靠的购物渠道。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">积分、优惠券和促销</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        积分：由于我们不会使用用户的个人账号在平台下单，所以无法为用户的个人账号积分。
+                    </li>
+                    <li>
+                        优惠券：由于我们不会使用用户的个人账号在平台下单，所以无法使用用户的个人账号优惠券。
+                    </li>
+                    <li>
+                        促销：由于各平台的促销机制非常细致复杂，所以我们在资源有限的情况下暂时无法提供计算了促销机制之后的价格，而只能提供直接的页面价格。
+                    </li>
+                </div>
+            </div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">对于多支/包/盒/瓶装商品，为什么一定要扫外包装的条码？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        多支/包/盒/瓶装商品的外包装条码和其内部的单件商品的条码不一样，如果扫描的是单件商品的条码，我们为你查找和购买的就是单件商品，这就相当于没有帮你买对。
+                    </li>
+                    <img src="img/packagecode.gif"  alt="外包装条码" class="image"/>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">刚好的服务支持哪些城市？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        目前我们的服务仅支持广州。
+                    </li>
+                </div>
+            </div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">如果更换了手机，我的数据还在吗?</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        你的数据跟随微信帐号，就算不小心取消关注，再次关注回来之后数据仍然继续用。如果你需要彻底删除个人数据，请联系客服。
+                    </li>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="little_title left right middle_margin_top hidden" id="little_title_productQuestions">
+            <h4>产品问题</h4>
+        </div>
+        <div class=" hidden detail top left" id="detail_productQuestions">
+            <div class="div_middle_title">添加商品(扫码)</div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">什么商品适合使用『扫码添加』？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>符合以下条件的的商品适合使用『扫码添加』：</li>
+                    <li class="disc">
+                        用惯了，用完了还买同一款的物品
+                    </li>
+                    <li class="disc">
+                        在一个类别里经常轮换着用的几款不同的商品
+                    </li>
+                    <li class="disc">
+                        经常忘了买，容易断货的商品
+                    </li>
+                    <li>例如：纸巾、纸尿裤、洗发水、沐浴露、牙膏、牙刷、洗手液、洗衣液、保鲜袋、厨房调料、常用药、猫粮等。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">对于多支/包/盒/瓶装商品，为什么一定要扫外包装的条码？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        多支/包/盒/瓶装商品的外包装条码和其内部的单件商品的条码不一样，如果扫描的是单件商品的条码，我们为你查找和购买的就是单件商品，这就相当于没有帮你买对。
+                    </li>
+                    <img src="img/packagecode.gif"  alt="外包装条码" class="image"/>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">扫码后不能识别商品怎么办？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li class="nodisc">
+                        可以按照页面的提示进行选择，我们也会为你尽快查找商品并在微信服务号中反馈。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">什么样的商品可以通过刚好购买？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        在京东自营、天猫超市（自营）和一号店自营销售并且有货的商品我们就可以帮你购买，目前我们只专注在日用快消品品类。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_middle_title top_15">管理商品</div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">如何主动修改商品的剩余用量、使用周期和存货数量？ </span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        在『我家存货』页面，点击你想要修改的商品就可以修改了。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">『商品库存不足通知』什么时候发送？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        通知会在商品用完的前7天发送一次，在商品用完当天再放松一次，也就是每个商品一共会发送两次通知，每次都在晚上9点发送。
+                    </li>
+                    <img src="img/shortagenotification.gif" alt="库存不足通知" class="image"/>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">购买完成后商品状态会被自动更新吗？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        是的。商品的库存数量会在支付完成后根据购买的数量自动更新，商品在存货清单中的状态也会根据剩余用量的天数自动调整。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_middle_title top_15">比价服务</div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">比价服务到底有什么用？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        可以为你节省时间。我们可以对一张购物清单中的多个商品在三大平台的自营频道比价而不只是针对单个商品，帮你免去繁琐的操作过程。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">比价结果可信吗？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        可信。我们提供实时的价格，在20分钟的比价结果有效时间内，如果你在相同购买渠道查询到的商品价格比刚好提供的低，我们会返还相应的差价金额。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">等待比价结果需要多久？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        比价时长由商品数量和扫码的商品是否在我们的数据库中决定，大部分情况下在1~10分钟左右，小众商品很可能需要更长的比价时间。我们强烈建议你在点击『去比价』之后就先去忙别的，不必刻意等待。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">比价结果的有效时间是多久？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        比价结果的有效时间是20分钟，超过20分钟未确认对应的订单，可以重新提交比价需求。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">刚好可以帮我在其他平台比价吗？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        目前我们的比价服务还不支持其他购物平台，但会在之后根据用户的需求选择扩充更多可靠的购物渠道。
+                    </li>
+                </div>
+            </div>
+            <div class="div_middle_title top_15">购买服务</div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">购买服务到底有什么用？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        可以为你节省时间。当你在比价结果中选择一个商家进行购买，只需要填写收货地址和支付订单，剩下的操作交给我们就好，而不必再跳转到对应的平台重新搜索商品 ➛ 加入购物车 ➛ 填写地址 ➛ 支付订单。
+                    </li>
+                </div>
+            </div>
+
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">购买流程怎么操作？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li class="disc">
+                        选择需要购买的商品 ➛ 交给客服比价（点击『去比价』） ➛ 查看比价结果 ➛ 支付 ➛ 收货（和你在三大平台购买的收货方式一样）。
+                    </li>                
+                </div>
+            </div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">订单的有效时间是多久？ </span>
+                </div>
+                <div class="div_answer hidden">
+                    <li class="disc">
+                        订单的有效时间是20分钟，超过20分钟未支付订单，需要重新提交。
+                    </li>                
+                </div>
+            </div>
+
+        </div>
+        <div class="little_title left right big_margin_top hidden" id="little_title_scenario">
+            <h4>物流、售后问题</h4>
+        </div>
+        <div class=" hidden detail top left" id="detail_scenario">
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">物流配送方是谁？时效如何？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        物流配送由用户选择支付的平台负责，时效遵从各平台的标准。
+                    </li>
+                </div>
+            </div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">退款和退换货怎么处理？</span>
+                </div>
+                <div class="div_answer hidden">
+                    <li>
+                        在订单详情页面可以选择『申请退款』，确认之后我们会在服务号的对话窗与你联系。退货和换货可以直接在服务号的对话窗内联系客服。
+                    </li>
+                </div>
+            </div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">天猫超市配送费</span>
+                </div>
+                <div class="div_answer hidden">
+                    <ol>
+                        <p style="font-weight: 300; margin-top: 5px" >
+                        *以下费用仅供参考，实际费用请访问官方网站
+                        </p>
+                        <li class="decimal">
+                        实付金额<50元，5kg内，运费20元，超出重量按1元/kg计算费用
+                        </li>
+                        <li class="decimal">
+                        50元 ≤ 实付金额 < 88元，5kg内，运费5元，超出重量按1元/kg计算费用
+                        </li>
+                        <li class="decimal">
+                        实付金额 ≥ 88元，20kg内，免费，超出重量按1元/kg计算费用
+                        </li>
+                        <li class="decimal">
+                        实付金额≥ 200元，20kg内，免费，超出重量按1元/kg计算费用
+                        </li>
+                        <li class="decimal">
+                        实付金额≥ 300元，30kg内，免费，超出重量按1元/kg计算费用
+                        </li>
+                        <li class="decimal">
+                        实付金额≥ 400元，40kg内，免费，超出重量按1元/kg计算费用
+                        </li>
+                        <li class="decimal">
+                        实付金额≥ 500元，50kg内，免费，超出重量按1元/kg计算费用
+                        </li>
+                        <li class="decimal">
+                        实付金额500元及以上，50KG为免邮优惠的上限，超出50KG的重量，统一按续重标准收费
+                        </li>
+                        <li class="decimal">
+                        物流配送方是你所选择的平台配送，时效、价格都遵从对应的平台官方标准。刚好不会在你的购买中收取额外的费用。
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">京东自营配送费</span>
+                </div>
+                <div class="div_answer hidden">
+                    <ol>
+                        <p style="font-weight: 300; margin-top: 5px" >
+                        *以下费用仅供参考，实际费用请访问官方网站
+                        </p>
+                        <li class="decimal">
+                        订单中非生鲜商品金额<99元，收取基础运费6元，重量超出50kg的，超出重量按1元/kg另外加收续重运费
+                        </li>
+                        <li class="decimal">
+                        订单中非生鲜商品金额≥99元，免基础运费，重量超出50kg的，超出重量按1元/kg加收续重运费
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="div_question_answer">
+                <div class="div_question">
+                    <div class="span_lable span_lable_pic"></div>
+                    <span class="question_title">一号店自营配送费标准</span>
+                </div>
+               <div class="div_answer hidden">
+                    <ol>
+                        <p style="font-weight: 300; margin-top: 5px;" >
+                        *以下费用仅供参考，实际费用请访问官方网站*
+                        </p>
+                        <li class="decimal">
+                        满68元，重量≤10kg 免运费
+                        </li>
+                        <li class="decimal">
+                        满136元，重量≤20kg 免运费，重量不超过20公斤
+                        </li>
+                        <li class="decimal">
+                        以此类推
+                        </li>
+                        <li>
+                        <p></p>
+                        </li>
+                        <li class="decimal">
+                        5元及以下, 5kg及以下,运费20元
+                        </li>
+                        <li class="decimal">
+                        5元以上, 50元及以下, 5kg及以下,运费10元
+                        </li>
+                        <li class="decimal">
+                        50元以上, 68元及以下, 5kg及以下,运费7元
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //初始化一些元素的高度
+        $(".div_title").css('height', getScreenHeight());
+        $(".div_big_box").css('height', getScreenHeight()/3);
+        $(".div_big_box h3").css('margin-top', getScreenHeight()/7);
+
+        //点击大标题，进入
+        $('.div_big_box').touchstart(function(){
+            $('.div_big_box').fadeOut();
+            var id = $(this).attr('id');
+            clickBigTitle(id);
+        });
+
+
+        //点击标题，展开
+        $(".div_question").on('touchstart', function(){
+            var div_answer = $(this).next('.div_answer');
+            var label = $(this).children('.span_lable');
+
+            $(".div_answer"). removeClass('thisClass').addClass('hidden');
+            $('.span_lable').removeClass('span_lable_pic_expand').addClass('span_lable_pic');
+            if (div_answer.hasClass('hidden')){
+                div_answer.removeClass('hidden');
+                label.removeClass('span_lable_pic').addClass('span_lable_pic_expand');
+            }
+        });
+
+
+
+        $("#div_small_title_box_1").touchstart(function(){
+            clean();
+            setTimeToRemoveHiddenClass('little_title_hot_topic');
+            $("#detail_hot_topic").addClass('big_margin_bottom');
+            $("#div_small_title_box_1").css('top', getScreenHeight()-100 + 'px');
+
+            $("#div_small_title_box_2")
+                    .removeClass('hidden')
+                    .stop()
+                    .css({'height':'50px'})
+                    .animate({'top':getScreenHeight()-100 + 'px'}, 0);
+
+            $("#div_small_title_box_3")
+                    .removeClass('hidden')
+                    .stop()
+                    .css({'height':'50px'})
+                    .animate({'top':getScreenHeight()-50 + 'px'}, 0);
+            setTimeToGo('detail_hot_topic');
+
+        });
+
+
+        $("#div_small_title_box_2").touchstart(function(){
+            clean();
+            setTimeToRemoveHiddenClass('little_title_productQuestions');
+            $("#detail_productQuestions").addClass('top').addClass('middle_margin_bottom');
+            $("#div_small_title_box_2").css('top', '0px');
+
+            $("#div_small_title_box_1")
+                    .removeClass('hidden')
+                    .stop()
+                    .css({'height':'50px'})
+                    .animate({'top':'0px'}, 0);
+
+            $("#div_small_title_box_3")
+                    .removeClass('hidden')
+                    .stop()
+                    .css({'height':'50px'})
+                    .animate({'top':getScreenHeight()-50 + 'px'}, 0);
+
+            setTimeToGo('detail_productQuestions');
+        });
+
+        $("#div_small_title_box_3").touchstart(function(){
+            clean();
+            setTimeToRemoveHiddenClass('little_title_scenario');
+            $("#detail_scenario").addClass('top');
+            $("#div_small_title_box_3").css('top', '100px');
+            $("#div_small_title_box_2").css('top', '0px');
+
+            $("#div_small_title_box_1")
+                    .removeClass('hidden')
+                    .stop()
+                    .css({'height':'50px'})
+                    .animate({'top':'0px'}, 0);
+
+            $("#div_small_title_box_2")
+                    .css('top', getScreenHeight()-50 + 'px')
+                    .removeClass('hidden')
+                    .stop()
+                    .css({'height':'50px'})
+                    .animate({'top': '50px'}, 0);
+            setTimeToGo('detail_scenario');
+        });
+
+
+    });
+
+  function setTimeToRemoveHiddenClass(id){
+      setTimeout(function(){
+          $("#" + id).removeClass('hidden');
+      }, 500);
+  }
+
+
+    function setTimeToGo(id){
+        setTimeout(function(){
+            $("#" + id).removeClass('hidden');
+        }, 500);
+    }
+
+
+    function clean(){
+        $(".pagination").addClass('hidden');
+        $("#detail_hot_topic").addClass('hidden');
+        $("#detail_productQuestions").addClass('hidden');
+        $("#detail_scenario").addClass('hidden');
+
+        $("#div_small_title_box_1").addClass('hidden');
+        $("#div_small_title_box_2").addClass('hidden');
+        $("#div_small_title_box_3").addClass('hidden');
+
+        $("#little_title_productQuestions").addClass('hidden');
+        $("#little_title_scenario").addClass('hidden');
+        $("#little_title_hot_topic").addClass('hidden');
+    }
+
+    function getScreenHeight(){
+        return $(window).height();
+    }
+
+    function clickBigTitle(id){
+        //先初始化，把所有的详情div加上hidden
+        $('.div_title').addClass('hidden');
+        $(".detail").addClass('hidden');
+        //把所有的大标题加上hidden
+        $('.div_big_box').addClass('hidden');
+        //把所有的小标题移除hidden
+        $('.div_small_box').removeClass('hidden');
+
+        //显示内容
+        //显示标题菜单
+        if (id == 'hot_topic'){
+
+            $("#div_small_title_box_1").css(
+                    {'top':getScreenHeight()-100 + 'px'}
+            ).addClass('hidden');
+
+            $("#div_small_title_box_2")
+                    .css( {'top':getScreenHeight()/3 + 'px'})
+                    .animate( {'top':getScreenHeight()-100 + 'px'},0)
+                    .css({'height':getScreenHeight()/3 + 'px'})
+                    .animate({'height':50+ 'px'},0);
+            $("#div_small_title_box_3")
+                    .css( {'top':getScreenHeight()*2/3 + 'px'})
+                    .animate( {'top':getScreenHeight()-50 + 'px'},0)
+                    .css({'height':getScreenHeight()/3 + 'px'})
+                    .animate({'height':50+ 'px'},0);
+            setTimeout(function(){
+                $("#little_title_hot_topic").removeClass('hidden');
+                $("#detail_" + id).removeClass('hidden')
+                        .addClass('big_margin_bottom');
+            },500);
+
+        } else if (id == 'productQuestions'){
+
+            $("#div_small_title_box_2").css(
+                    {'top': '50px'}
+            ).addClass('hidden');
+
+            $("#div_small_title_box_1")
+                    .css({'height':getScreenHeight()/3 + 'px'})
+                    .animate({'height':50+ 'px'},0);
+            $("#div_small_title_box_3")
+                    .css( {'top':getScreenHeight()*2/3 + 'px'})
+                    .animate( {'top':getScreenHeight()-50 + 'px'},0)
+                    .css({'height':getScreenHeight()/3 + 'px'})
+                    .animate({'height':50+ 'px'},0);
+
+            $('#index').text(1);
+
+            setTimeout(function(){
+                $("#little_title_productQuestions").removeClass('hidden').addClass('middle_margin_top');
+                $("#detail_" + id).removeClass('hidden')
+                        .addClass('top')
+                        .addClass('middle_margin_bottom');
+            }, 500);
+
+
+
+        } else {
+
+            $("#div_small_title_box_3").css(
+                    {'top':'100px'}
+            ).addClass('hidden');
+
+            $("#div_small_title_box_1")
+                    .css({'height':getScreenHeight()/3 + 'px'})
+                    .animate({'height':50+ 'px'},0);
+            $("#div_small_title_box_2")
+                    .css( {'top':getScreenHeight()/3 + 'px'})
+                    .animate( {'top':50 + 'px'},0)
+                    .css({'height':getScreenHeight()/3 + 'px'})
+                    .animate({'height':50+ 'px'},0);
+
+            $('#index').text(1);
+
+            setTimeout(function(){
+                $("#little_title_scenario").removeClass('hidden');
+                $("#detail_" + id)
+                        .removeClass('hidden')
+                        .addClass('top');
+            }, 500);
+
+
+        }
+    }
+
+</script>
+
+
